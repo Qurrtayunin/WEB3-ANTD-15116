@@ -80,4 +80,32 @@
   color: rgba(0, 0, 0, 0.65);
   font-size: 14px;
   background: #f0f2f5;
+  display: inherit;
+}
+
+
+.footer{
+  margin-top: 0;
+}
+
+.content{
+  padding: 0 0px;
+  margin: 0 -110px;
+}
+
+.ant-card-body{
+  padding: 10px;
+}
+
+.title{
+  margin-top: -20px;
+  margin: 0;
+}
+
+.desc{
+  margin: 0;
+}
+
+.padding-img{
+  padding: 3px;
 }
