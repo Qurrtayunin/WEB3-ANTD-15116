@@ -1,0 +1,27 @@
+@import '~antd/dist/antd.css';
+
+.title{
+  margin-top: -20px;
+  margin: 0;
+}
+
+.desc{
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.ket{
+  margin: -5px;
+  font-size: 10px;
+}
+
+.padding-img{
+  padding: 3px;
+}
+
+.set-card{
+  margin: 50px;
+  display: inherit;
+  text-align: center;
+}
+

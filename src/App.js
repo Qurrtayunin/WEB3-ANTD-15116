@@ -1,8 +1,7 @@
-import React from 'react';
+import React , {Component, Fragment} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Typography, Card, Col, Row, Layout, Menu } from 'antd';
-import { OmitProps } from 'antd/lib/transfer/renderListBody';
 
 
 function App() {
@@ -61,38 +60,11 @@ function App() {
                   <p>18/425974/SV/15116</p>
               </Col>
               <Col span={12}>
-                  <img src="https://image.freepik.com/free-vector/time-management-concept-illustration_114360-1013.jpg" width="400px" height="300px"></img>
+                  <img src="https://2.bp.blogspot.com/-s2P6r_JR3pI/WRXgZxjsovI/AAAAAAAAAOo/PD1_ll-YDXks-5o-jee0zd0SMYMAwI3fgCLcB/s1600/programmer.png" width="300px" height="300px"></img>
               </Col>
             </Row>
           </div>
         </Content>
-
-        <Footer className="footer">
-
-        {carData.map(data=>
-             <Row gutter={8} justify="center"> 
-                     <Col span={4}> 
-                    <Card
-                        style={{ width: 225 }}
-                        cover={
-                        <img className="padding-img"
-                            alt="example"
-                            src="https://image.freepik.com/free-vector/fashion-illustration-with-female-model_23-2148223276.jpg"
-                        />
-                        }
-                        actions={[
-                        <img src="https://image.flaticon.com/icons/svg/633/633759.svg" width="15px" height="15px"></img>,
-                        <img src="https://image.flaticon.com/icons/svg/633/633758.svg" width="15px" height="15px"></img>,
-                        ]}
-                    >
-                      <p className="title"><b>{data.title}</b></p>
-                      <p className="desc">{data.desc}</p>
-                    </Card>
-                      </Col>
-             </Row> 
-            )}
-
-        </Footer>
       </Layout>
   </div>
     
