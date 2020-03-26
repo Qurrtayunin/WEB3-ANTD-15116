@@ -25,10 +25,18 @@ class CardMember extends Component{
         unlike:3
     }
 
+    handleCounterChange = (newValue) =>{
+        this.props.onCounterChange(newValue);
+    }
+
     handleLike = () =>{
         this.setState({
             like: this.state.like + 1
+        }, ()=> {
+            this.props.onCounterChange(this.state.like);
         })
+
+        
     }
 
     handleUnlike = () => {
@@ -42,11 +50,7 @@ class CardMember extends Component{
         return(
            <div>
             <div className="set-card">
-                <Card title="Lets Vote, Karyawan Terbaik!!!" bordered={false}>
-                <p><b>Total Penilaian :</b></p>
-                <p className="nomargin">Qurrota A'yunin  <i><b> {this.state.like} Vote </b></i></p>
-                <p className="nomargin">Cintya Agusti A  <i><b> {this.state.like} Vote </b></i></p>
-                <p className="nomargin">Afida Rindy      <i><b> {this.state.like} Vote </b></i></p>
+                <Card bordered={false}>
                   <Row>
                     <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
                     {cardData.map(data=>

@@ -8,6 +8,17 @@ const { Header, Content, Footer } = Layout;
 const { Title } = Typography;
 
 class App extends Component {
+  state = {
+    like: 20,
+    unlike:3
+  }
+
+  handleCounterChange = (newValue) => {
+      this.setState({
+        like: newValue
+      })
+  }
+
   render(){
     return (
       <div className="App">
@@ -46,7 +57,16 @@ class App extends Component {
           </Content>
       </Layout>
       
-      <CardMember/>
+      <div className="set-card">
+          <Card title="Lets Vote, Karyawan Terbaik!!!" bordered={false}>
+          <p><b>Total Penilaian :</b></p>
+          <p className="nomargin">Qurrota A'yunin  <i><b> {this.state.like} Vote Suka</b></i></p>
+          <p className="nomargin">Cintya Agusti A  <i><b> {this.state.like} Vote Suka</b></i></p>
+          <p className="nomargin">Afida Rindy      <i><b> {this.state.like} Vote Suka</b></i></p>
+          </Card>
+        </div>
+      
+      <CardMember onCounterChange={(value)=>this.handleCounterChange(value)}/>
     </div>
       
     );
