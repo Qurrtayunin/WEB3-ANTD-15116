@@ -1,9 +1,10 @@
 import React , {Component} from 'react';
 import App from './App';
 import './CardMember.css';
+
 import { Typography, Card, Col, Row, Layout, Menu } from 'antd';
 
-const carData = [
+const cardData = [
     {
       title : "Qurrota A'yunin",
       desc : "Mobile Dev"
@@ -40,12 +41,15 @@ class CardMember extends Component{
     render (){
         return(
            <div>
-            <App></App>
             <div className="set-card">
                 <Card title="Lets Vote, Karyawan Terbaik!!!" bordered={false}>
+                <p><b>Total Penilaian :</b></p>
+                <p className="nomargin">Qurrota A'yunin  <i><b> {this.state.like} Vote </b></i></p>
+                <p className="nomargin">Cintya Agusti A  <i><b> {this.state.like} Vote </b></i></p>
+                <p className="nomargin">Afida Rindy      <i><b> {this.state.like} Vote </b></i></p>
                   <Row>
                     <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
-                    {carData.map(data=>
+                    {cardData.map(data=>
                             <Card
                                 style={{ width: 230 }}
                                 cover={
@@ -66,7 +70,7 @@ class CardMember extends Component{
                             )}
                     </Col>
                     <Col xs={{ span: 11, offset: 1 }} lg={{ span: 6, offset: 2 }}>
-                    {carData.map(data=>
+                    {cardData.map(data=>
                             <Card
                                 style={{ width: 230 }}
                                 cover={
@@ -87,7 +91,7 @@ class CardMember extends Component{
                             )}
                     </Col>
                     <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
-                    {carData.map(data=>
+                    {cardData.map(data=>
                             <Card
                                 style={{ width: 230 }}
                                 cover={
