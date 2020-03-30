@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/WEB3-ANTD-15116/static/css/main.8f6cf0d7.chunk.css",
+    "main.js": "/WEB3-ANTD-15116/static/js/main.8c335504.chunk.js",
+    "main.js.map": "/WEB3-ANTD-15116/static/js/main.8c335504.chunk.js.map",
+    "runtime-main.js": "/WEB3-ANTD-15116/static/js/runtime-main.860bb33d.js",
+    "runtime-main.js.map": "/WEB3-ANTD-15116/static/js/runtime-main.860bb33d.js.map",
+    "static/css/2.ad8fe80d.chunk.css": "/WEB3-ANTD-15116/static/css/2.ad8fe80d.chunk.css",
+    "static/js/2.94236315.chunk.js": "/WEB3-ANTD-15116/static/js/2.94236315.chunk.js",
+    "static/js/2.94236315.chunk.js.map": "/WEB3-ANTD-15116/static/js/2.94236315.chunk.js.map",
+    "index.html": "/WEB3-ANTD-15116/index.html",
+    "precache-manifest.875f2f1d5d96bae606413c08324e2a01.js": "/WEB3-ANTD-15116/precache-manifest.875f2f1d5d96bae606413c08324e2a01.js",
+    "service-worker.js": "/WEB3-ANTD-15116/service-worker.js",
+    "static/css/2.ad8fe80d.chunk.css.map": "/WEB3-ANTD-15116/static/css/2.ad8fe80d.chunk.css.map",
+    "static/css/main.8f6cf0d7.chunk.css.map": "/WEB3-ANTD-15116/static/css/main.8f6cf0d7.chunk.css.map",
+    "static/js/2.94236315.chunk.js.LICENSE.txt": "/WEB3-ANTD-15116/static/js/2.94236315.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.860bb33d.js",
+    "static/css/2.ad8fe80d.chunk.css",
+    "static/js/2.94236315.chunk.js",
+    "static/css/main.8f6cf0d7.chunk.css",
+    "static/js/main.8c335504.chunk.js"
+  ]
+}
