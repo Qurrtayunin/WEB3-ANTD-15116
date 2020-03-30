@@ -1,6 +1,5 @@
 import React , {Component} from 'react';
-import App from './App';
-import './CardMember.css';
+import './style.css';
 
 import { Typography, Card, Col, Row, Layout, Menu } from 'antd';
 
@@ -19,12 +18,12 @@ const cardData = [
     }
   ]
 
-class CardMember extends Component{
+class CardVote extends Component{
     state = {
         like: 20,
         unlike:3
     }
-
+    
     handleCounterChange = (newValue) =>{
         this.props.onCounterChange(newValue);
     }
@@ -35,8 +34,6 @@ class CardMember extends Component{
         }, ()=> {
             this.props.onCounterChange(this.state.like);
         })
-
-        
     }
 
     handleUnlike = () => {
@@ -123,4 +120,4 @@ class CardMember extends Component{
     } 
 }
 
-export default CardMember;
+export default CardVote;
